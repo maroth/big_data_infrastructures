@@ -1,0 +1,5 @@
+ Seq Scan on "position" p  (cost=0.00..2944.00 rows=1154 width=45) (actual time=0.025..18.994 rows=1088 loops=1)
+   Filter: ((lat >= 60::numeric) AND (lat <= 90::numeric) AND (lon >= 20::numeric) AND (lon <= 44::numeric))
+   Rows Removed by Filter: 98912
+ Planning time: 0.315 ms
+ Execution time: 20.259 ms

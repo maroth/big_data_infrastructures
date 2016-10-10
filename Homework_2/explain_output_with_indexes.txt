@@ -1,0 +1,9 @@
+ Bitmap Heap Scan on "position" p  (cost=176.87..1257.19 rows=1155 width=45) (actual time=1.188..5.596 rows=1088 loops=1)
+   Recheck Cond: ((lon >= 20::numeric) AND (lon <= 44::numeric))
+   Filter: ((lat >= 60::numeric) AND (lat <= 90::numeric))
+   Rows Removed by Filter: 5631
+   Heap Blocks: exact=944
+   ->  Bitmap Index Scan on lon_index  (cost=0.00..176.58 rows=6816 width=0) (actual time=1.085..1.085 rows=6719 loops=1)
+         Index Cond: ((lon >= 20::numeric) AND (lon <= 44::numeric))
+ Planning time: 0.272 ms
+ Execution time: 6.555 ms

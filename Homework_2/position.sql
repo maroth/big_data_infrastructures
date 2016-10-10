@@ -1,0 +1,7 @@
+CREATE TABLE Position (
+    positionId BIGSERIAL PRIMARY KEY,
+    timestamp TIMESTAMP NOT NULL,
+    lat NUMERIC NOT NULL,
+    lon NUMERIC NOT NULL,
+    alt NUMERIC NOT NULL
+);
